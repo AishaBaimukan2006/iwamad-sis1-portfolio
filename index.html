@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha Baimukan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">Aisha Baimukan </h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="about" class="container about-section">
+            <img src="https://github.com/AishaBaimukan2006.png" alt="Aisha's Avatar" class="profile-avatar">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm Aisha, a third-year IT Management student at KBTU. I specialize in frontend web development using React and TypeScript, UI/UX design in Figma, and data analytics. I also have experience with 3D modeling in Blender and real-time development using Unreal Engine. This portfolio showcases my learning journey and projects completed for the <strong>ITMA-3005: Interactive Mobile and Web Development</strong> course.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects (ITMA-3005)</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <h3>Design System & UI (Practice 05)</h3>
+                    <p>Refactored a React project to implement a custom design system. Extracted CSS tokens from a Figma handoff, built reusable UI components, and fixed contrast accessibility issues.</p>
+                    <a href="https://github.com/AishaBaimukan2006/iwamad-practice/pull/6?classId=df335f44-1200-4c23-980a-1627a15aadf1&assignmentId=73511d0a-6ff5-4fa1-b4b1-7a13f95e2ea3&submissionId=9d2db596-e578-7b97-352e-cafee8ab31cd" class="project-link" target="_blank">View Pull Request</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>React Routing & State (Practice 03-04)</h3>
+                    <p>Built a responsive profile card component using React and TypeScript. Implemented client-side routing and global state management for an interactive likes counter.</p>
+                    <a href="https://github.com/AishaBaimukan2006/iwamad-practice/pull/5?classId=df335f44-1200-4c23-980a-1627a15aadf1&assignmentId=77249d72-6f7d-4423-ae12-d0e5fda0b0fe&submissionId=6875d913-e426-7f0b-08e3-84e6af4c14e7" class="project-link" target="_blank">View Pull Request</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>Responsive Webpage (Practice 01-02)</h3>
+                    <p>Developed a foundational webpage from scratch using semantic HTML5 and vanilla CSS. Focused on mobile-first design principles to ensure adaptability across all screen sizes.</p>
+                    <a href="https://github.com/AishaBaimukan2006/iwamad-practice/pull/3?classId=df335f44-1200-4c23-980a-1627a15aadf1&assignmentId=5321d224-1cce-4ac5-a9a6-803e6ebdbede&submissionId=8814e41c-64ad-07e7-932a-591236c01bb9" class="project-link" target="_blank">View Pull Request</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div id="form-message" class="form-message" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Aisha.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
